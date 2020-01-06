@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather Page</title>
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.css"
+              rel="stylesheet">
+        <link href="css/home.css" 
+              rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1><center>Weather Page</center></h1>
+            <hr/>
+            <ul class="list-group" id="errorMessages"></ul>
+            <form class="form-inline" role="form">
+                    <div class="form-group col-md-offset-4">
+                    <label for="zipcode-entry">
+                    <div class="form-group form-inline">         
+                            Zipcode:
+                         <input type="text"
+                                class="form-control"
+                                id="enter-zipcode"
+                                pattern="[0-5]"
+                                placeholder="Enter Zipcode" required/>
+                        
+                            </div>
+                        </label>
+                    </div>
+            <div class="form-group ">
+                <label for="edit-first-name">
+                        Units:
+                    <select class="form-control">
+                                    
+                        <option value="volvo">Imperial</option>
+                        <option value="saab">Metric</option>
+                    </select>
+                </label>
+            </div>
+                <button type="button"
+                        id="add-button"
+                        class="btn btn-default">
+                        Get Weather
+                </button>
+            </form>                                                                   
+             <div id="weatherInfoDiv" style="display:none">
+                 <hr/>
+                 <h1 style="display: inline">Current Conditions in</h1> 
+                 <h1 id="cityName" style="display: inline"></h1> 
+                 
+               
+                    <div class="row">
+                        <div class="column" style="float:left">
+                            <img id="currentPhoto" src="">
+                        </div>
+                        <div class="column">
+                         <h3 id="currentText">
+                            </h3>
+                        </div>
+                        <div class="column" style="float:left">
+                           <h4 id="temperature" ></h4> 
+                           <h4 id="humidity" ></h4> 
+                           <h4 id="wind" ></h4> 
+                        </div>
+                        
+                    </div>
+                  <hr/> 
+                   <h1>Five Day Forcast</h1>
+                    <div class="row">
+  <div id="forcast"class="column">
+    <h3 id="dayOne"></h3>
+    <h3 id="textOne"></h3><img id="imageOne">
+    <h4 id="tempOne">H 87.26F L 72.97F</h4>
+  </div>
+  <div id="forcast" class="column" >
+    <h3 id="dayTwo"></h3>
+      <h3 id="textTwo"></h3><img id="imageTwo">
+    <h4 id="tempTwo">H 87.26F L 72.97F</h4>
+  </div>
+  <div id="forcast" class="column" >
+    <h3 id="dayThree"></h3>
+    <h3 id="textThree"></h3><img id="imageThree">
+    <h4 id="tempThree">H 87.26F L 72.97F</h4>
+  </div>
+  <div id="forcast" class="column" >
+    <h3 id="dayFour"></h3>
+   <h3 id="textFour"></h3><img id="imageFour">
+    <h4 id="tempFour">H 87.26F L 72.97F</h4>
+  </div>
+  <div  id="forcast" class="column" >
+    <h3 id="dayFive"></h3>
+   <h3 id="textFive"></h3><img id="imageFive">
+    <h4 id="tempFive">H 87.26F L 72.97F</h4>
+  </div>
+</div>
+
+                 </div>
+            
+                
+                
+            
+                 
+            </div>
+           
+           
+               
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/home.js"></script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+.column {
+  float: left;
+  width: 20.33%;
+  padding: 5px;
+  height: 100px; 
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  height:auto;
+}
+#forcast{
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 150px; 
+}
